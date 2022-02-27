@@ -7,7 +7,7 @@ y2 = st.slider('Petal width', 0.1,2.5, 0.5)
 
 from sklearn.datasets import load_iris
 iris = load_iris()
-from sklearn.trees import DecisionTreeClassifier
+from sklearn.tree import DecisionTreeClassifier
 model = DecisionTreeClassifier()
 model.fit(iris.data,iris.target)
 x = model.predict([[x1,x2,y1,y2]])
