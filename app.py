@@ -6,3 +6,4 @@ ip = st.text_input('enter the message')
 op = model.predict([ip])
 if st.button('Predict'):
   st.slider(op[0])
+        
